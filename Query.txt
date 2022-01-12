@@ -1,0 +1,43 @@
+1) Selezionare tutti gli insegnanti
+
+SELECT * 
+FROM teachers
+
+2) Selezionare tutti gli studenti il cui nome inizia per "E"
+
+SELECT *
+From students
+Where students.name like "e%"
+
+3) Selezionare tutti gli studenti che si sono iscritti nel 2021
+
+SELECT *
+From students
+Where student.enrolment_date Like "2021%"
+
+4) Selezionare tutti i corsi che non hanno un sito web
+
+SELECT *
+FROM courses
+WHERE courses.website is NULL
+
+5) Selezionare tutti gli insegnanti che hanno un numero di telefono
+
+SELECT *
+FROM teachers
+WHERE teachers.phone is NOT NULL
+
+6)  Selezionare tutti gli appelli d'esame dei mesi di giugno e luglio 2020
+
+SELECT *
+FROM exams.date
+WHERE exams.date BETWEEN "2020-06-01" AND "2020-07-31"
+
+7) Qual è il numero totale degli studenti iscritti?
+
+FROM COUNT(id) AS total_students
+Where students
+
+
+
+
